@@ -1,0 +1,9 @@
+.filler {
+  flex: 1 1 auto;
+}
+.gap {
+  margin-right: 10px;
+}
+.mat-card-image {
+  margin: -1px 26px 20px 410px;
+}

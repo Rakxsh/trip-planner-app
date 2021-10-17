@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+  <span class="gap">TRIPPO</span>
+  <img src="https://img.icons8.com/color/50/000000/metallic-paint.png" />
+
+  <span class="filler"></span>
+
+  <button mat-raised-button class="gap">
+    <a routerLink="/login">Logout</a>
+  </button>
+</mat-toolbar>
+<div class="card-wrapper">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <img
+        src="https://www.gannett-cdn.com/presto/2019/06/23/USAT/c3a9f051-bd6c-4b39-b5b9-38244deec783-GettyImages-932651818.jpg?width=660&height=517&fit=crop&format=pjpg&auto=webp"
+        mat-card-avatar
+      />
+      <mat-card-title>trippo.com</mat-card-title>
+      <mat-card-subtitle> Switch up your Routine </mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-image
+      class="mat-car-image"
+      style="width: 600px"
+      src="https://images.unsplash.com/photo-1496950866446-3253e1470e8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt="Angular Logo"
+    />
+    <mat-card-content>
+      <p>
+        Search Flights, Hotels, Bus and Holiday Packages trippo.com is one of
+        the topmost travel companies of India and is a trusted name in the
+        Indian travel industry. It is also known for providing the best travel
+        deals to travelers. Being a strong network of 2000 travel agents (as of
+        September 30, 2021) and having more than 50k direct customers, trippo
+        can satisfy all your travel needs. Here, You can book flight tickets,
+        hotels, cabs at a cost-effective price. So, why go anywhere else? Visit
+        us for a memorable travel experience in your budget.
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="basic" class="view-button">
+        <a routerLink="/viewbookedtrips">View Trips</a>
+      </button>
+      <button mat-raised-button color="warn">
+        <a routerLink="/booktrips">Book Trips</a>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
