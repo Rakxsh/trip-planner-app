@@ -1,0 +1,122 @@
+{
+  "bookTrips": [
+    {
+      "name": "ram",
+      "phone": "6756456789",
+      "date": "2021-10-28T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Flights",
+      "transporttype": "NON-AC",
+      "hotelname": "Hotel PLANZA (AC)",
+      "id": 1
+    },
+    {
+      "name": "balaji",
+      "phone": "64738386738",
+      "date": "2021-10-20T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Flights",
+      "transporttype": "AC",
+      "hotelname": "Hotel TANZA (AC)",
+      "id": 2
+    },
+    {
+      "name": "aakash",
+      "phone": "6756456789",
+      "date": "2021-10-21T18:30:00.000Z",
+      "destination": "Bengaluru",
+      "transportmode": "Trains",
+      "transporttype": "AC",
+      "hotelname": "Hotel VINTAGE (NON-AC)",
+      "id": 3
+    },
+    {
+      "name": "tamil",
+      "phone": "6756456789",
+      "date": "2021-10-12T18:30:00.000Z",
+      "destination": "Bengaluru",
+      "transportMode": "Flights",
+      "transportType": "AC",
+      "hotelName": "Hotel TANZA (AC)",
+      "id": 4
+    },
+    {
+      "name": "rak",
+      "phone": "8797979798",
+      "date": "2021-10-08T18:30:00.000Z",
+      "destination": "Chennai",
+      "transportmode": "Flights",
+      "transporttype": "AC",
+      "hotelname": "Hotel TANZA (AC)",
+      "id": 5
+    },
+    {
+      "phone": "8797979798",
+      "date": "2021-10-12T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Flights",
+      "transporttype": "AC",
+      "hotelname": "Hotel TANZA (AC)",
+      "id": 6
+    },
+    {
+      "name": "hashini",
+      "phone": "8797979798",
+      "date": "2021-10-28T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Flights",
+      "transporttype": "NON-AC",
+      "hotelname": "Hotel ELANZA (AC)",
+      "totalcost": 8000,
+      "id": 7
+    },
+    {
+      "name": "sivasai",
+      "phone": "6474647466",
+      "date": "2021-10-27T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Flights",
+      "transporttype": "AC",
+      "hotelname": "Hotel TANZA (AC)",
+      "totalcost": 10000,
+      "id": 8
+    },
+    {
+      "name": "balaji uday",
+      "phone": "9987656798",
+      "date": "2021-10-20T18:30:00.000Z",
+      "destination": "Bengaluru",
+      "transportmode": "Trains",
+      "transporttype": "NON-AC",
+      "hotelname": "Hotel VINTAGE (NON-AC)",
+      "totalcost": 1500,
+      "id": 9
+    },
+    {
+      "name": "Rakki",
+      "phone": "8765456785",
+      "date": "2021-10-20T18:30:00.000Z",
+      "destination": "Bengaluru",
+      "transportmode": "Trains",
+      "transporttype": "AC",
+      "hotelname": "Hotel TANZA (AC)",
+      "totalcost": 5500,
+      "id": 10
+    },
+    {
+      "transportmode": "Flights",
+      "transporttype": "NON-AC",
+      "totalcost": 0,
+      "id": 11
+    },
+    {
+      "date": "2021-10-21T18:30:00.000Z",
+      "destination": "Bengaluru",
+      "transportmode": "Trains",
+      "transporttype": "AC",
+      "hotelname": "Hotel ELANZA (AC)",
+      "totalcost": 2000,
+      "id": 12
+    }
+  ]
+}

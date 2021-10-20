@@ -1,0 +1,34 @@
+{
+  "bookTrips": [
+    {
+      "name": "vinay",
+      "phone": "9677682825",
+      "date": "2021-10-21T18:30:00.000Z",
+      "destination": "Chennai",
+      "transportMode": "Flights",
+      "transportType": "AC",
+      "hotelName": "Hotel TANZA (AC)",
+      "id": 1
+    },
+    {
+      "name": "vijay raj",
+      "phone": "6474647466",
+      "date": "2021-10-12T18:30:00.000Z",
+      "destination": "Chennai",
+      "transportMode": "Trains",
+      "transportType": "NON-AC",
+      "hotelName": "Hotel PLANZA (AC)",
+      "id": 2
+    },
+    {
+      "name": "ram",
+      "phone": "6474647466",
+      "date": "2021-10-21T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportMode": "Flights",
+      "transportType": "AC",
+      "hotelName": "Hotel PLANZA (AC)",
+      "id": 3
+    }
+  ]
+}

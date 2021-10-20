@@ -1,3 +1,57 @@
-.mat-raised-button {
-  margin: 250px;
+body {
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}
+
+.example-container {
+  background-color: grey;
+  height: 1000px;
+  overflow: scroll;
+  padding: 10px 10px 10px 10px;
+}
+.example-form-field {
+  margin: 0 8px 16px 0;
+}
+
+#type {
+  top: 23px;
+  right: 10px;
+}
+
+table {
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+  background-color: cornsilk;
+}
+
+.dfilter {
+  margin: 80px 0 0 10px;
+}
+
+button {
+  margin: 0px 0px 1px 0px;
+  padding: 3px;
+  float: right !important;
+}
+.filler {
+  flex: 1 1 auto;
+}
+.gap {
+  margin-right: 10px;
+}
+.mat-card-image {
+  margin: -1px 26px 20px 410px;
+}
+.px-16 {
+  padding-right: 1200px;
+  padding-left: 30px;
+}
+.main-wrapper .mat-stroked-button {
+  border: 1px solid currentColor;
+  line-height: 54px;
+  background: #fff7fa;
 }

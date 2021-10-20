@@ -4,25 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
- import {MatToolbarModule} from '@angular/material/toolbar';
- import { FlexLayoutModule } from '@angular/flex-layout';
- import {MatIconModule} from '@angular/material/icon';
- import {MatSidenavModule} from '@angular/material/sidenav';
- import {MatButtonModule} from '@angular/material/button';
- import {MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
-import {  RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-import { FormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { FormControl, FormGroup, FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatSelectModule} from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
 import { CommonModule } from '@angular/common';
 
 import { OverlayModule } from '@angular/cdk/overlay';
@@ -53,23 +53,23 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatRadioModule } from '@angular/material/radio';
 
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import {  ReactiveFormsModule } from '@angular/forms';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { BookTripsComponent } from './book-trips/book-trips.component';
+import { HttpClientModule } from '@angular/common/http';
 import { ViewBookedTripsComponent } from './view-booked-trips/view-booked-trips.component';
+import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
 
 const appRoutes: Routes = [
-  {path:'login', component:LoginComponent},
-  {path:'', component:LoginComponent},
-  {path:'home', component:HomeComponent},
-  {path:'booktrips', component: BookTripsComponent},
-  {path:'viewbookedtrips', component:ViewBookedTripsComponent}
-
- 
-  
+  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'bookyourtrips', component: BookTripsComponent },
+  { path: 'viewbookedtrips', component: ViewBookedTripsComponent },
+  { path: 'generatetickets', component: GenerateTicketComponent },
 ];
 
 @NgModule({
@@ -78,26 +78,25 @@ const appRoutes: Routes = [
     LoginComponent,
     HomeComponent,
     BookTripsComponent,
-    ViewBookedTripsComponent
+    ViewBookedTripsComponent,
+    GenerateTicketComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-     BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     MatAutocompleteModule,
-    
+
     FormsModule,
-    
-   
+    HttpClientModule,
+    MatDatepickerModule,
+
     BrowserAnimationsModule,
     MatNativeDateModule,
     MatToolbarModule,
-    PortalModule,
-    OverlayModule,
-    CdkTreeModule,
-    CommonModule,
+
     MatButtonToggleModule,
     MatCheckboxModule,
     FlexLayoutModule,
@@ -123,17 +122,17 @@ const appRoutes: Routes = [
     MatProgressSpinnerModule,
     MatMenuModule,
     MatListModule,
-MatRippleModule,
+    MatRippleModule,
 
-MatExpansionModule,
+    MatExpansionModule,
 
-MatInputModule,
-MatSelectModule,
-MatDatepickerModule,
-     RouterModule.forRoot(appRoutes),
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

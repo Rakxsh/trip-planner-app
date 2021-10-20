@@ -1,10 +1,14 @@
-<mat-toolbar color="primary">
-  <span>TRIPPO</span>
-  <img src="https://img.icons8.com/color/50/000000/metallic-paint.png" />
-  <button mat-raised-button class="mat-raised-button">
-    <a routerLink="/home">Home</a>
-  </button>
-</mat-toolbar>
+<div>
+  <mat-toolbar color="primary">
+    <span>TRIPPO</span>
+    <img src="https://img.icons8.com/color/50/000000/metallic-paint.png" />
+    <span class="filler"></span>
+
+    <button mat-raised-button class="gap">
+      <a routerLink="/home">Back</a>
+    </button>
+  </mat-toolbar>
+</div>
 
 <div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <mat-card class="box">
@@ -12,22 +16,35 @@
       <mat-card-title>Book Trip</mat-card-title>
     </mat-card-header>
 
-    <form class="example-form">
+    <form class="example-form" (ngSubmit)="onSubmit()" [formGroup]="tripForm">
       <mat-card-content>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Name" />
+          <input
+            [(ngModel)]="name"
+            formControlName="name"
+            matInput
+            placeholder="Name"
+          />
         </mat-form-field>
 
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Telephone</mat-label>
           <span matPrefix>+91 &nbsp;</span>
-          <input type="tel" matInput placeholder="555-555-1234" />
+          <input
+            [(ngModel)]="phone"
+            formControlName="phone"
+            type="tel"
+            matInput
+            placeholder="555-555-1234"
+          />
           <mat-icon matSuffix>mode_edit</mat-icon>
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
           <mat-label>Choose a date</mat-label>
           <input
+            [(ngModel)]="date"
+            formControlName="date"
             matInput
             [min]="minDate"
             [max]="maxDate"
@@ -42,25 +59,36 @@
 
         <mat-form-field class="example-full-width">
           <mat-label>Choose Destination</mat-label>
-          <mat-select>
-            <mat-option [value]="location" *ngFor="let location of Locations"
-              >{{ location }}
+          <mat-select [(ngModel)]="destination" formControlName="destination">
+            <mat-option
+              [value]="destination"
+              *ngFor="let destination of destinations"
+              >{{ destination }}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
-        <!-- <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width">
           <mat-label>Choose Transport Mode</mat-label>
-          <mat-select #mode (focus)="setcost(mode, type)">
-            <mat-option [value]="mode" *ngFor="let mode of Modes"
-              >{{ mode }}
+          <mat-select
+            [(ngModel)]="transportmode"
+            (focus)="setTransportModeAndCost()"
+            formControlName="transportmode"
+          >
+            <mat-option
+              [value]="transportmode"
+              *ngFor="let transportmode of transportmodes"
+              >{{ transportmode }}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
           <mat-label>AC/NON-AC</mat-label>
-          <mat-select #type>
+          <mat-select
+            [(ngModel)]="transporttype"
+            formControlName="transporttype"
+          >
             <mat-option
               [value]="transporttype"
               *ngFor="let transporttype of transporttypes"
@@ -68,40 +96,44 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        -->
 
         <mat-form-field class="example-full-width">
-          <mat-label>Hotel (Optional)</mat-label>
-          <mat-select>
-            <mat-option [value]="hotel" *ngFor="let hotel of hotels"
-              >{{ hotel }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-          <mat-label>AC/NON-AC</mat-label>
-          <mat-select>
-            <mat-option [value]="hoteltype" *ngFor="let hoteltype of hoteltypes"
-              >{{ hoteltype }}
+          <mat-label>Hotel Name (Optional)</mat-label>
+          <mat-select
+            [(ngModel)]="hotelName"
+            (focus)="setHotel()"
+            formControlName="hotelName"
+          >
+            <mat-option [value]="hotelname" *ngFor="let hotelname of hotelnames"
+              >{{ hotelname }}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
         <mat-form-field class="example-full-width" floatLabel="always">
-          <mat-label>Amount</mat-label>
+          <mat-label>Total Cost</mat-label>
           <input
+            [(ngModel)]="totalcost"
+            formControlName="totalcost"
+            (focus)="totalAmount()"
             matInput
             type="number"
             class="example-right-align"
             placeholder="0"
+            value="{{ totalcost }}"
           />
           <span matPrefix>$&nbsp;</span>
           <span matSuffix>.00</span>
         </mat-form-field>
       </mat-card-content>
 
-      <button mat-stroked-button color="accent" class="btn-block">
+      <button
+        type="submit"
+        mat-stroked-button
+        (click)="bookTrips()"
+        color="accent"
+        class="btn-block"
+      >
         Register
       </button>
     </form>
