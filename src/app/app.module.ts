@@ -23,11 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSelectModule } from '@angular/material/select';
-import { CommonModule } from '@angular/common';
 
-import { OverlayModule } from '@angular/cdk/overlay';
-import { CdkTreeModule } from '@angular/cdk/tree';
-import { PortalModule } from '@angular/cdk/portal';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -62,6 +58,8 @@ import { BookTripsComponent } from './book-trips/book-trips.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewBookedTripsComponent } from './view-booked-trips/view-booked-trips.component';
 import { GenerateTicketComponent } from './generate-ticket/generate-ticket.component';
+
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -129,6 +127,7 @@ const appRoutes: Routes = [
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
+
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],

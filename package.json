@@ -25,6 +25,7 @@
     "@ionic-native/core": "^5.36.0",
     "@ionic/angular": "5.8.4",
     "@ionic/angular-toolkit": "4.0.0",
+    "@ngmodule/material-carousel": "^0.6.0",
     "angular-decorators": "^1.2.0",
     "angular2-uuid": "^1.1.1",
     "bootstrap": "^5.1.3",

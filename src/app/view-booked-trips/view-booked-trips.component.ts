@@ -54,6 +54,11 @@ export class ViewBookedTripsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let resp = this.service.getTrips();
+    resp.subscribe(
+      (report: Trips[]) => (this.dataSource.data = report as Trips[])
+    );
+    console.log(this.destination);
     this.getAllTrips();
   }
 

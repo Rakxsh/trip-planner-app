@@ -117,6 +117,54 @@
       "hotelname": "Hotel ELANZA (AC)",
       "totalcost": 2000,
       "id": 12
+    },
+    {
+      "name": "rakesh",
+      "phone": "9677682825",
+      "date": "2021-10-19T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Trains",
+      "transporttype": "AC",
+      "hotelname": "Hotel PLANZA (AC)",
+      "totalcost": 7000,
+      "id": 13
+    },
+    {
+      "name": "sandhiya",
+      "phone": "5678987654567",
+      "date": "2021-10-12T18:30:00.000Z",
+      "destination": "Chennai",
+      "transportmode": "Trains",
+      "transporttype": "AC",
+      "hotelname": "Hotel PLANZA (AC)",
+      "totalcost": 3000,
+      "id": 14
+    },
+    {
+      "name": "satish",
+      "phone": "6484868375",
+      "date": "2021-10-20T18:30:00.000Z",
+      "destination": "Mumbai",
+      "transportmode": "Flights",
+      "transporttype": "AC",
+      "hotelname": "Hotel TANZA (AC)",
+      "totalcost": 10000,
+      "id": 15
+    },
+    {
+      "totalcost": 0,
+      "id": 16
+    },
+    {
+      "name": null,
+      "phone": null,
+      "date": null,
+      "destination": null,
+      "transportmode": "Trains",
+      "transporttype": null,
+      "hotelname": null,
+      "totalcost": null,
+      "id": 17
     }
   ]
 }

@@ -22,14 +22,15 @@
     <form class="example-form">
       <mat-card-content>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Trip ID" />
+          <input matInput #tId placeholder="Trip ID" />
         </mat-form-field>
       </mat-card-content>
       <button
         mat-stroked-button
         color="primary"
-        (click)="generateUUID()"
+        (click)="generateUUID(tId)"
         class="btn-block"
+        [disabled]="disabled"
       >
         Generate
       </button>
